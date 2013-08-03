@@ -1,0 +1,48 @@
+== Welcome to Who's want to become a Memelionaire
+
+Setup: 1.git clone git@github.com:elizahyde/ifly.by.git 2.change ENV variables
+
+bundle install
+
+update .env file 
+
+rake:db create
+
+rake db:migrate
+
+rake db:seed
+
+foreman start
+
+##### Who Wants to be a Millionr!
+
+Despite the name, this application is not actually the same as the popular gameshow "Who Wants to be a Millionaire". Rather, it's a quiz game for up to three friends to play together. They play sitting together, off of the same computer. When they start a game, each player is assigned a key, which serves as their buzzer. A question is then shown. The first player to press their buzzer key gets an opportunity to answer. After some number of questions, the game ends and someone is the winner.
+
+###### THE RULES
+
+1. TDD and Pair-Programming.
+2. CoffeeScript only.
+3. Github for planning.
+4. Mixpanel for analytics.
+5. **Solid Demos** - Rehearse if you need to.
+
+###### 1. Basic functionality.
+
+- Questions are plain-text. Answers are multiple-choice.
+- Build the game for three players only (So there's no logic necessary for how to handle the game with only two players).
+- Don't forget about analytics.
+- Forget about making it look good.
+
+###### 2. Ship it.
+
+- Make it look good.
+- Deploy it to Heroku. You may not demo off of Localhost for this project.
+
+###### 3. Advanced functionality. Do not start any of these features until the basic functionality and design are solid and the application has been deployed.
+
+- Support two or three players - or more, if you want.
+- Questions should allow for media like photos or videos.
+- Answers can be either multiple-choice or text.
+- Add sound effects using the *[Teach Yo Self™](https://github.com/sumeetjain/WDI-SF-May-2013/wiki/Homework#friday-august-2)* homework - perhaps for a game ending and a buzzer-press.
+- Add an admin area where questions/answers can be added. If questions can have media in them, this might mean adding an upload form!
+
