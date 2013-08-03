@@ -1,6 +1,7 @@
 == Welcome to Who's want to become a Memelionaire
 
 Setup: 
+
 git clone git@github.com:amyerz/memelioniare.git
 
 change ENV variables
