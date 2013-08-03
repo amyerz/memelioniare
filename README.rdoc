@@ -1,10 +1,11 @@
 == Welcome to Who's want to become a Memelionaire
 
-Setup: 1.git clone git@github.com:elizahyde/ifly.by.git 2.change ENV variables
+Setup: 
+git clone git@github.com:amyerz/memelioniare.git
+
+change ENV variables
 
 bundle install
-
-update .env file 
 
 rake:db create
 
