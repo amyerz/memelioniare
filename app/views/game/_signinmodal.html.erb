@@ -1,0 +1,31 @@
+<!-- Modal -->
+<div class="modal fade" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">Sign In with Three Players</h4>
+      </div>
+      <div class="modal-body">
+        <%= form_tag do %>
+          <%= label_tag "Player 1" %>
+          <%= text_field_tag :player1name %>
+        <% end %>
+        <%= form_tag do %>
+          <%= label_tag "Player 2" %>
+          <%= text_field_tag :player2name %>
+        <% end %>
+        <%= form_tag do %>
+          <%= label_tag "Player 3" %>
+          <%= text_field_tag :player3name %>
+        <% end %>
+      </div>
+      <div class="modal-footer">
+        <a href="#" class="btn">Close</a>
+        <a href="#" class="btn btn-primary">Save changes</a>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<!-- JS on click of button, grabs contents of forms with repsective id's and because it is still apart of the DOM, we'll have access to those names later (I think) $('#player1name').val() -->
