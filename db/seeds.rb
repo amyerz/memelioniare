@@ -17,31 +17,9 @@
 
 #all correct answer is the first choice!
 questions = [
-	{
-		content: "In a restaurant, she asks to switch chairs with you(her boyfriend) bacuse:",
-		question_type:"Match this Meme",
-		choices:[
-			"Your overly attached gf is upset that you can see way too many other girls from where you're sitting, and wants to create a human shield between you and them,",
-			"It's a little bit drafty where she's sitting, and she forgot her sweater.",
-			"She knows you prefer not sitting with your back facing the door and is trying to be considerate",
-			"She would prefer to be closer to the restroom so she doesn't have to ask you move if she needs to run to the ladies room. "
-		]
-	},
-
-	{
-		content: "This kid is super excited because:",
-		question_type: "Match this Meme",
-		choices:[
-			"He was the 1,000,000 visitor to this site and won a free iPad for the 2nd time that day.",
-			"He finished his term paper on the effects of whaling in Antartica a whole day early",
-			"He leveled up in World of Warcraft",
-			"He successefully wrote a complex algorithm for the Entscheidungsproblem "
-		]
-	},
-
 
 	  {
-	    content: "memes/overlyattachedgirlfriend.jpg",
+	    content: "overlyattachedgirlfriend.jpg",
 	    question_type:"Name this Meme",
 	    choices:[
 	      "Overly Attached Girlfriend",
@@ -53,7 +31,7 @@ questions = [
 
 	#paranoid parrot
 	  {
-	    content: "memes/paranoidparrot.jpg",
+	    content: "paranoidparrot.jpg",
 	    question_type: "Name this Meme",
 	    choices:[
 	      "Paranoid Parrot",
@@ -67,7 +45,7 @@ questions = [
 	#scumbag steve
 
 	  {
-	    content: "memes/scumbagsteve.jpg",
+	    content: "scumbagsteve.jpg",
 	    question_type: "Name this Meme",
 	    choices:[
 	      "Scumbag Steve",
@@ -81,7 +59,7 @@ questions = [
 
 	#socially awkward penguin
 	  {
-	    content: "memes/sociallyawkwardpenguin.jpg",
+	    content: "sociallyawkwardpenguin.jpg",
 	    question_type: "Name this Meme",
 	    choices:[
 	      "Socially Awkward Penguin",
@@ -93,7 +71,7 @@ questions = [
 	  },
 	#foul bachelor frog
 	  {
-	    content: "memes/foulbachelorfrog.jpg",
+	    content: "foulbachelorfrog.jpg",
 	    question_type: "Name this Meme",
 	    choices:[
 	      "Foul Bachelor Frog",
@@ -105,10 +83,10 @@ questions = [
 	  },
 	#courage wolf
 	  {
-	    content: "memes/insanitywolf.jpg",
+	    content: "insanitywolf.jpg",
 	    question_type: "Name this Meme",
 	    choices:[
-	      "Courage Wolf",
+	      "Insanity Wolf",
 	      "Caring Wolf",
 	      "Winning Wolf",
 	      "Wistful Wolf"
@@ -118,7 +96,7 @@ questions = [
 
 	#Annoying FB girl
 	  {
-	    content: "memes/annoyingfacebookgirl.jpg",
+	    content: "annoyingfacebookgirl.jpg",
 	    question_type: "Name this Meme",
 	    choices:[
 	      "Annoying Facebook Girl",
@@ -132,7 +110,7 @@ questions = [
 
 	  #business cat
 	    {
-	      content: "memes/businesscat.jpg",
+	      content: "businesscat.jpg",
 	      question_type: "Name this Meme",
 	      choices:[
 	        "Business Cat",
@@ -145,7 +123,7 @@ questions = [
 
 	  #bad joke eel
 	    {
-	      content: "memes/badjokeeel.jpg",
+	      content: "badjokeeel.jpg",
 	      question_type: "Name this Meme",
 	      choices:[
 	        "Bad Joke Eel",
@@ -159,7 +137,7 @@ questions = [
 
 	  #not sure fry
 	    {
-	      content: "memes/notsurefry.jpg",
+	      content: "notsurefry.jpg",
 	      question_type: "Name this Meme",
 	      choices:[
 	        "Not Sure Fry",
@@ -172,7 +150,7 @@ questions = [
 
 	  #success kid
 	    {
-	      content: "memes/successkid.jpg",
+	      content: "sucesskid.jpg",
 	      question_type: "Name this Meme",
 	      choices:[
 	        "Success Kid",
@@ -186,7 +164,7 @@ questions = [
 
 	  #picard
 	    {
-	      content: "memes/whythefuckpicard.jpg",
+	      content: "whythefuckpicard.jpg",
 	      question_type: "Name this Meme",
 	      choices:[
 	        "Why The Fuck Picard",
