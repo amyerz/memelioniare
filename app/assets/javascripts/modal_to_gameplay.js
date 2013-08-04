@@ -6,9 +6,9 @@ $(document).ready(function () {
 
     var switch_from_homepage_to_game = function() {
       begin_play_button.on('click', function(){
-        var player1_name = $('#player1name').val();
-        var player2_name = $('#player2name').val();
-        var player3_name = $('#player3name').val();
+        var player1_name = $('#player1name').val().toUpperCase();
+        var player2_name = $('#player2name').val().toUpperCase();
+        var player3_name = $('#player3name').val().toUpperCase();
         var player1_name_show = $('#player1_name_show');
         var player2_name_show = $('#player2_name_show');
         var player3_name_show = $('#player3_name_show');
