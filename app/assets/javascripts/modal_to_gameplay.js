@@ -11,8 +11,8 @@ var player3_name_show = $('#player3_name_show');
 
 var switch_from_homepage_to_game = function() {
   sigin_button.on('click', function(){
-    alert('what up')
-    // take player names from forms and append to their divs showing their names
+    console.log('whatup');
+    // take player names from forms and append to the h3's showing their names
     player1_name_show.append(player1_name);
     player2_name_show.append(player2_name);
     player3_name_show.append(player3_name);
@@ -23,3 +23,5 @@ var switch_from_homepage_to_game = function() {
 
   });
 };
+
+switch_from_homepage_to_game();

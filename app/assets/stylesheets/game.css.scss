@@ -7,7 +7,7 @@
 }
 
 #about_page_container {
-  // display: none; // change to see
+  display: none; // change to see
   padding: 30px;
   h1, p {
     text-align: center;
@@ -29,19 +29,18 @@
 }
 
 #game {
-  display: none; // change to see
+  display: visible; // change to see
   #users_nav {
-    display: none; // change to see
-    height: 60px;
+    height: 50px;
     .users_name {
       float: left;
       width: 33.33%;
-      height: 60px;
+      height: 50px;
       h3, p {
         text-align: center;
       }
       h3 {
-        font-size: 20px;
+        font-size: 15px;
         margin-top: 5px;
       }
       p {
@@ -54,6 +53,20 @@
     .turn {
       h3, p {
         font-weight: bold;
+      }
+      #player1_name_show,
+      #player2_name_show,
+      #player3_name_show {
+        float: left;
+        margin-left: 40px;
+        margin-right: -20px;
+      }
+
+
+      #press_a,
+      #press_b,
+      #press_l {
+        margin-top: 6px;
       }
       #player1_name_show,
       #press_a {
@@ -78,12 +91,14 @@
       width: 500px;
       height: 300px;
       border: 1px solid;
-      margin: 10px auto;
+      margin: -5px auto;
     }
-    .question {
-      width: 300px;
+    .question,
+    .choice {
+      width: 800px;
       border: 1px solid;
-      height: 20px;
+      height: 25px;
+      margin: 20px auto;
     }
   }
 } // #game
