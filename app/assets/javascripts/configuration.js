@@ -17,7 +17,7 @@ var game = {
 	questions:null,
 	questionCount: 0,
 
-	maxRoundTime: 30, //in seconds
+	maxRoundTime: 60, //in seconds
 	maxSelectTime: 10, //in seconds
 
 	round: {

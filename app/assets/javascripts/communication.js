@@ -14,6 +14,7 @@ function load_questions() {
 			choices: ['foo','bar','baz','loo']
 		}
 	];
+	
 	game.questionCount = game.questions.length;
 
 	getNextQuestion();
