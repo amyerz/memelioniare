@@ -16,7 +16,7 @@
 #    t.integer  "question_id"
 
 #all correct answer is the first choice!
-question = [
+questions = [
 	{
 		content: "In a restaurant, she asks to switch chairs with you(her boyfriend) bacuse:",
 		question_type:"Match this Meme",

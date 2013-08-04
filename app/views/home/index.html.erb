@@ -1,3 +1,54 @@
-<h1>Home#index</h1>
+<html>
+ <head>
+  <title>Game</title>
+  
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  <script id="welcome" type="text/template">
+    Welcome to the game
+  </script>
+ 
+  <script id="question_template" type="text/template">
+    <img id="question_img" />
+    <table>
+      <tr>
+        <td><div class="choice" id="choice1" data-id="0">Text1</div></td>
+        <td><div class="choice" id="choice2" data-id="1">Text2</div></td>
+      </tr>
+      <tr>
+        <td><div class="choice" id="choice3" data-id="2">Text3</div></td>
+        <td><div class="choice" id="choice4" data-id="3">Text4</div></td>
+      </tr>
+    </table>
+  </script>
+
+  <script src="html.js"></script>
+  <script src="communication.js"></script>
+  <script src="configuration.js"></script>
+  <script src="gameplay.js"></script>
+  <script src="start.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+ </head>
+ 
+  <body>
+    <div id="gametitle"></div>
+    <div id="mode"></div>
+    <div id="timer"></div>
+
+
+    <div id="container"></div>
+    <button id="startGameButton">Start Game</button>
+
+    <table>
+      <tr>
+        <td>Player 1: <span id="player1_score"></span></td>
+        <td>Player 2: <span id="player2_score"></span></td>
+        <td>Player 3: <span id="player3_score"></span></td>
+      </tr>
+    </table>
+  </body>
+
+ </html>
 
 
