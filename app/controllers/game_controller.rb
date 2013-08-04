@@ -1,6 +1,7 @@
 class GameController < ApplicationController
   def index
-
+    @questions = Question.all
+    @choices = Choice.all
   end
 
   def new

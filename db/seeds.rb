@@ -41,17 +41,17 @@ questions = [
 
 ]
 
-questions.each do |question|
+question.each do |question|
 
 	savedQuestion = Question.create(
 		content: question[:content],
 		question_type: question[:question_type])
- 	
+
  	choices=[]
- 	
+
  	question[:choices].each do |choice|
  		savedChoice = Choice.create(
- 			content: choice, 
+ 			content: choice,
  			question_id: savedQuestion.id)
  		choices.push(savedChoice)
  	end
