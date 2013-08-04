@@ -16,10 +16,10 @@
 #    t.integer  "question_id"
 
 #all correct answer is the first choice!
-questions = [
+question = [
 	{
 		content: "In a restaurant, she asks to switch chairs with you(her boyfriend) bacuse:",
-		type:"Match this Meme",
+		question_type:"Match this Meme",
 		choices:[
 			"Your overly attached gf is upset that you can see way too many other girls from where you're sitting, and wants to create a human shield between you and them,",
 			"It's a little bit drafty where she's sitting, and she forgot her sweater.",
@@ -30,7 +30,7 @@ questions = [
 
 	{
 		content: "This kid is super excited because:",
-		type: "Match this Meme",
+		question_type: "Match this Meme",
 		choices:[
 			"He was the 1,000,000 visitor to this site and won a free iPad for the 2nd time that day.",
 			"He finished his term paper on the effects of whaling in Antartica a whole day early",
@@ -39,7 +39,27 @@ questions = [
 		]
 	}
 
-
-
-
 ]
+
+questions.each do |question|
+
+	savedQuestion = Question.create(
+		content: question[:content],
+		question_type: question[:question_type])
+ 	
+ 	choices=[]
+ 	
+ 	question[:choices].each do |choice|
+ 		savedChoice = Choice.create(
+ 			content: choice, 
+ 			question_id: savedQuestion.id)
+ 		choices.push(savedChoice)
+ 	end
+
+  savedQuestion.correct_choice_id = choices.first.id
+  savedQuestion.save
+
+end
+
+
+
