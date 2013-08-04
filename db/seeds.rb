@@ -37,11 +37,171 @@ questions = [
 			"He leveled up in World of Warcraft",
 			"He successefully wrote a complex algorithm for the Entscheidungsproblem "
 		]
-	}
+	},
+
+
+	  {
+	    content: "memes/overlyattachedgirlfriend.jpg",
+	    question_type:"Name this Meme",
+	    choices:[
+	      "Overly Attached Girlfriend",
+	      "Staring Stacy",
+	      "Youtube Queen",
+	      "Overly Attached Gina"
+	    ]
+	  },
+
+	#paranoid parrot
+	  {
+	    content: "memes/paranoidparrot.jpg",
+	    question_type: "Name this Meme",
+	    choices:[
+	      "Paranoid Parrot",
+	      "Tenacious Bird",
+	      "Creeped out Bird",
+	      "Socially Awkward Penguin"
+
+	    ]
+	  },
+
+	#scumbag steve
+
+	  {
+	    content: "memes/scumbagsteve.jpg",
+	    question_type: "Name this Meme",
+	    choices:[
+	      "Scumbag Steve",
+	      "Douchebag Sam",
+	      "Dumb Hat Guy",
+	      "Stylish Steven"
+
+	    ]
+	  },
+
+
+	#socially awkward penguin
+	  {
+	    content: "memes/sociallyawkwardpenguin.jpg",
+	    question_type: "Name this Meme",
+	    choices:[
+	      "Socially Awkward Penguin",
+	      "Paranoid Penguin",
+	      "Tuxedo Tom",
+	      "Waddling Penguin"
+
+	    ]
+	  },
+	#foul bachelor frog
+	  {
+	    content: "memes/foulbachelorfrog.jpg",
+	    question_type: "Name this Meme",
+	    choices:[
+	      "Foul Bachelor Frog",
+	      "Funny Frog",
+	      "Failure Frog",
+	      "Bachelor Toad"
+
+	    ]
+	  },
+	#courage wolf
+	  {
+	    content: "memes/insanitywolf.jpg",
+	    question_type: "Name this Meme",
+	    choices:[
+	      "Courage Wolf",
+	      "Caring Wolf",
+	      "Winning Wolf",
+	      "Wistful Wolf"
+
+	    ]
+	  },
+
+	#Annoying FB girl
+	  {
+	    content: "memes/annoyingfacebookgirl.jpg",
+	    question_type: "Name this Meme",
+	    choices:[
+	      "Annoying Facebook Girl",
+	      "Annoying Teenager",
+	      "Annoying Anna",
+	      "Funny Face Girl"
+
+	    ]
+	  },
+
+
+	  #business cat
+	    {
+	      content: "memes/businesscat.jpg",
+	      question_type: "Name this Meme",
+	      choices:[
+	        "Business Cat",
+	        "Overdressed Feline",
+	        "Busy Bee Bob",
+	        "Marketing Kitty"
+
+	      ]
+	    },
+
+	  #bad joke eel
+	    {
+	      content: "memes/badjokeeel.jpg",
+	      question_type: "Name this Meme",
+	      choices:[
+	        "Bad Joke Eel",
+	        "Excited Eel",
+	        "Bad Pun Eel",
+	        "Condescending Eel"
+
+	      ]
+	    },
+
+
+	  #not sure fry
+	    {
+	      content: "memes/notsurefry.jpg",
+	      question_type: "Name this Meme",
+	      choices:[
+	        "Not Sure Fry",
+	        "Undecided Guy",
+	        "Squint Eye Fry",
+	        "Always Unsure Guy"
+
+	      ]
+	    },
+
+	  #success kid
+	    {
+	      content: "memes/successkid.jpg",
+	      question_type: "Name this Meme",
+	      choices:[
+	        "Success Kid",
+	        "Thug Kid",
+	        "Sucess Sammy",
+	        "Baby Boom"
+
+	      ]
+	    },
+
+
+	  #picard
+	    {
+	      content: "memes/whythefuckpicard.jpg",
+	      question_type: "Name this Meme",
+	      choices:[
+	        "Why The Fuck Picard",
+	        "Disappointed Picard",
+	        "Angry Bald Guy",
+	        "Disappointed White Guy"
+
+	      ]
+	    }
+
+
 
 ]
 
-question.each do |question|
+questions.each do |question|
 
 	savedQuestion = Question.create(
 		content: question[:content],
