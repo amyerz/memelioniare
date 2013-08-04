@@ -17,6 +17,7 @@
 
 #all correct answer is the first choice!
 questions = [
+
 	# {
 	# 	content: "In a restaurant, she asks to switch chairs with you(her boyfriend) bacuse:",
 	# 	question_type:"Match this Meme",
@@ -38,7 +39,6 @@ questions = [
 	# 		"He successefully wrote a complex algorithm for the Entscheidungsproblem "
 	# 	]
 	# },
-
 
 	  {
 	    content: "overlyattachedgirlfriend.jpg",
@@ -172,8 +172,9 @@ questions = [
 
 	  #success kid
 	    {
+
 	      content: "successkid.jpg",
-	      question_type: "Name this Meme",
+				question_type: "Name this Meme",
 	      choices:[
 	        "Success Kid",
 	        "Thug Kid",
