@@ -5,8 +5,8 @@ function update_container(html) {
 function fillInQuestion(question) {
 	var content = $('#question_template').html();
 	update_container(content);
-
-	$('#question_img').attr('src', question.content);
+ 
+	$('#question_img').attr('src', 'assets/memes/' + question.content);
 
 	$('#choice1').html(question.choices[0]);
 	$('#choice2').html(question.choices[1]);

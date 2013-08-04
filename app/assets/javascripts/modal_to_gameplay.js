@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
-    var begin_play_button = $('#begin_play_button');
-    var about_page_container = $('#about_page_container');
+    var begin_play_button = $('#begin_play_button'); //start the game
+    var about_page_container = $('#about_page_container'); //
     var game_container = $('#game');
 
     var switch_from_homepage_to_game = function() {
