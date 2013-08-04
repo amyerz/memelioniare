@@ -8,7 +8,9 @@ $(document).ready(function () {
 	});
 	$(window).keydown(function (event) {
 		playerButtonClicked(event.which);
-	});	
+	});
 
 	setInterval(updateTimer, 500);
+
+
 });

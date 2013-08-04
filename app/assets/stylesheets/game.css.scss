@@ -1,29 +1,92 @@
-#about_page_container {
+#container {
   width: 70%;
-  height: 500px;
-  border: 3px solid;
-  margin: 50px auto;
+  height: 600px;
+  border: 6px solid #7f8c8d;
+  margin: 10px auto;
   border-radius: 10px;
-  padding: 30px;
+}
 
+#about_page_container {
+  // display: none; // change to see
+  padding: 30px;
   h1, p {
     text-align: center;
   }
-
+  p {
+    font-size: 18px;
+  }
   p:nth-child(2) {
     font-size: 25px;
     margin-top: 15px;
-  }
-  p:nth-child(3),
-  p:nth-child(4) {
-    font-size: 18px;
   }
   #signin_button {
     margin-top: 30px;
     margin-left: 300px;
   }
 }
-
 .modal-title {
   text-align: center
 }
+
+#game {
+  display: none; // change to see
+  #users_nav {
+    display: none; // change to see
+    height: 60px;
+    .users_name {
+      float: left;
+      width: 33.33%;
+      height: 60px;
+      h3, p {
+        text-align: center;
+      }
+      h3 {
+        font-size: 20px;
+        margin-top: 5px;
+      }
+      p {
+        font-size: 12px;
+        margin-top: 0px;
+      }
+    } // .users_name
+
+    // adding the class 'turn' to "users_name' will change the font to communicate who buzzed in first"
+    .turn {
+      h3, p {
+        font-weight: bold;
+      }
+      #player1_name_show,
+      #press_a {
+        color: #e74c3c;
+        text-shadow: 0 0 10px #e74c3c;
+      }
+      #player2_name_show,
+      #press_b {
+        color: #9b59b6;
+        text-shadow: 0 0 10px #9b59b6;
+      }
+      #player3_name_show,
+      #press_l {
+        color: #3498db;
+        text-shadow: 0 0 10px #3498db;
+      }
+    } // .turn
+  } // #users_nave
+
+  #gameplay {
+    .meme {
+      width: 500px;
+      height: 300px;
+      border: 1px solid;
+      margin: 10px auto;
+    }
+    .question {
+      width: 300px;
+      border: 1px solid;
+      height: 20px;
+    }
+  }
+} // #game
+
+
+

@@ -1,17 +1,53 @@
-<div id="about_page_container">
-  <h1>Who Wants to be a Memelionaire?</h1>
+<div id="container">
+  <div id="about_page_container">
+    <h1>Who Wants to be a Memelionaire?</h1>
+      <p>Have you ever wanted to test your memeability against other memesters? Enter, Memelionare!!!!!</p>
+      <p>Test your meme-fluency against two others.  A short round of ten questions will be presented to all three meme-estants.  Each player will have a key that will act as their buzzer.  The first player that buzzes in has an opportunity to answer the question. The player who answers the most correct questions is the meme-tastic winner!!!!  </p>
+      <p>Player One's key buzzer is the letter "a."</p>
+      <p>Player Two's key buzzer is the letter "b."</p>
+      <p>Player Three's key buzzers it the letter "l."</p>
+    <!-- Button trigger modal -->
+      <a id="signin_button" data-toggle="modal" href="#myModal" class="btn btn-primary btn-large">Sign In to Start Game</a>
+      <%= render 'signinmodal' %>
+  </div>
 
-    <p>Have you ever wanted to test your memeability against other memesters? Enter, Memelionare!!!!!</p>
-    <p>Test your meme-fluency against two others.  A short round of ten questions will be presented to all three meme-estants.  Each player will have a key that will act as their buzzer.  The first player that buzzes in has an opportunity to answer the question. The player who answers the most correct questions is the meme-tastic winner!!!!  </p>
+  <div id="game">
+    <div id="users_nav">
+      <div class="users_name turn">
+        <h3 id="player1_name_show">
 
-    <p>Player One's key buzzer is the letter "a."  Player Two's key buzzer is the letter "b."  Player Three's key buzzers it the letter "l."</p>
+        </h3>
+        <p id="press_a">
+          Press "A" to Buzz-In.
+        </p>
+      </div>
+      <div class="users_name turn">
+        <h3 id="player2_name_show">
 
+        </h3>
+        <p id="press_b">
+          Press "B" to Buzz-In.
+        </p>
+      </div>
+      <div class="users_name turn">
+        <h3 id="player3_name_show">
 
+        </h3>
+        <p id="press_l">
+          Press "L" to Buzz-In.
+        </p>
+      </div>
+    </div>
+    <div id="gameplay">
+      <div class="meme">
+      </div>
+      <div class="question">
+      </div>
+    </div>
 
-  <!-- Button trigger modal -->
-    <a id="signin_button" data-toggle="modal" href="#myModal" class="btn btn-primary btn-large">Sign In to Start Game</a>
-
-    <%= render 'signinmodal' %>
+  </div>
 
 </div>
+
+
 
