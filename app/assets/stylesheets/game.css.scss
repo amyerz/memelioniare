@@ -1,13 +1,14 @@
 #container {
   width: 70%;
   height: 600px;
-  border: 6px solid #7f8c8d;
+  // border: 1px solid #7f8c8d;
   margin: 10px auto;
   border-radius: 10px;
+  box-shadow: 0px 0px 24px rgba(50, 50, 50, 0.65);
 }
 
 #about_page_container {
-  // display: none; // change to see
+  display: visible; // change to see
   padding: 30px;
   h1, p {
     text-align: center;
@@ -31,22 +32,24 @@
 #game {
   display: none; // change to see
   #users_nav {
-    display: none; // change to see
-    height: 60px;
+    height: 50px;
+    padding-top: 8px;
     .users_name {
       float: left;
       width: 33.33%;
-      height: 60px;
+      height: 50px;
       h3, p {
         text-align: center;
       }
       h3 {
-        font-size: 20px;
+        font-size: 15px;
         margin-top: 5px;
+        float: left;
+        margin-left: 40px;
       }
       p {
         font-size: 12px;
-        margin-top: 0px;
+        margin-top: 6px;
       }
     } // .users_name
 
@@ -78,12 +81,17 @@
       width: 500px;
       height: 300px;
       border: 1px solid;
-      margin: 10px auto;
+      margin: -5px auto;
+    }
+    .question,
+    .choice {
+      width: 800px;
+      border: 1px solid;
+      height: 25px;
+      margin: 20px auto;
     }
     .question {
-      width: 300px;
-      border: 1px solid;
-      height: 20px;
+      margin-top: 30px;
     }
   }
 } // #game
