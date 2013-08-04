@@ -7,22 +7,31 @@
         <h4 class="modal-title">Sign In with Three Players</h4>
       </div>
       <div class="modal-body">
-        <%= form_tag do %>
-          <%= label_tag "Player 1" %>
-          <%= text_field_tag :player1name %>
-        <% end %>
-        <%= form_tag do %>
-          <%= label_tag "Player 2" %>
-          <%= text_field_tag :player2name %>
-        <% end %>
-        <%= form_tag do %>
-          <%= label_tag "Player 3" %>
-          <%= text_field_tag :player3name %>
-        <% end %>
+        <div class="row">
+          <div class='col-lg-4'>
+            <%= form_tag  do %>
+              <%= label_tag "Player 1" %>
+              <%= text_field_tag :player1name, nil, placeholder: 'Username' %>
+            <% end %>
+          </div>
+          <div class='col-lg-4'>
+            <%= form_tag  do %>
+              <%= label_tag "Player 2" %>
+              <%= text_field_tag :player2name, nil, placeholder: 'Username' %>
+            <% end %>
+          </div>
+          <div class='col-lg-4'>
+            <%= form_tag  do %>
+              <%= label_tag "Player 3" %>
+              <%= text_field_tag :player3name, nil, placeholder: 'Username' %>
+            <% end %>
+          </div>
+
+        </div>
       </div>
       <div class="modal-footer">
         <a href="#" class="btn">Close</a>
-        <a href="#" class="btn btn-primary">Save changes</a>
+        <a href="#" class="btn btn-primary">Save Usernames</a>
       </div>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
