@@ -1,7 +1,29 @@
 #about_page_container {
   width: 70%;
   height: 500px;
-  border: 1px solid;
-  margin: 30px auto;
+  border: 3px solid;
+  margin: 50px auto;
   border-radius: 10px;
+  padding: 30px;
+
+  h1, p {
+    text-align: center;
+  }
+
+  p:nth-child(2) {
+    font-size: 25px;
+    margin-top: 15px;
+  }
+  p:nth-child(3),
+  p:nth-child(4) {
+    font-size: 18px;
+  }
+  #signin_button {
+    margin-top: 30px;
+    margin-left: 300px;
+  }
+}
+
+.modal-title {
+  text-align: center
 }
