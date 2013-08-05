@@ -4,12 +4,13 @@ body {
   background-size: cover;
 }
 
-#container {
+#total_container {
   background-color: white;
   width: 70%;
-  height: 600px;
+  height: auto;
   // border: 1px solid #7f8c8d;
   margin: 10px auto;
+  padding-bottom: 30px;
   border-radius: 10px;
   box-shadow: 0px 0px 24px rgba(50, 50, 50, 0.65);
 }
@@ -82,26 +83,52 @@ body {
       }
     } // .turn
   } // #users_nave
+  #timer {
+    width: 40%;
+    margin: 0 auto 20px;
+    text-align: center;
+    font-size: 18px;
+  }
 
   #gameplay {
-    .meme {
-      width: 500px;
-      height: 300px;
-      border: 1px solid;
+    #question_img {
+      width: 300px;
+      height: auto;
+      margin: auto;
+      border-radius: 10px;
+      border: 4px;
+      box-shadow: 0px 0px 24px rgba(50, 50, 50, 0.65);
+    }
+    .container {
       margin: -5px auto;
+      width: 300px;
     }
     .question,
     .choice {
-      width: 800px;
-      border: 1px solid;
-      height: 25px;
+      width: 50%;
+
       margin: 20px auto;
+      font-size: 24px;
+      text-align: center;
     }
     .question {
-      margin-top: 30px;
     }
-  }
+    #gametitle {
+      font-size: 24px;
+      border: 0px;
+      margin: 0 auto;
+    }
+
+  } // #gameplay
 } // #game
+
+#mode {
+  text-align: center;
+  color: #3d7195;
+  font-size: 20px;
+  font-weight: bold;
+}
+
 
 
 

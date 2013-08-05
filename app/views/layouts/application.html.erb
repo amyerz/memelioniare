@@ -12,6 +12,22 @@
 
 
 <%= javascript_include_tag "application" %>
+
+<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+
+<script id="question_template" type="text/template">
+  <img id="question_img" />
+  <table>
+    <tr>
+      <td><div class="choice" id="choice1" data-id="0">Text1</div></td>
+      <td><div class="choice" id="choice2" data-id="1">Text2</div></td>
+    </tr>
+    <tr>
+      <td><div class="choice" id="choice3" data-id="2">Text3</div></td>
+      <td><div class="choice" id="choice4" data-id="3">Text4</div></td>
+    </tr>
+  </table>
+</script>
 <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/js/bootstrap.min.js"></script>
 </body>
 </html>
