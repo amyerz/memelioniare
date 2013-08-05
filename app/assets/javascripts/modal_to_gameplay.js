@@ -17,6 +17,11 @@ $(document).ready(function () {
         player1_name_show.append(player1_name);
         player2_name_show.append(player2_name);
         player3_name_show.append(player3_name);
+
+        game.player[0].name = player1_name;
+        game.player[1].name = player2_name;
+        game.player[2].name = player3_name;
+
         // close/hide the modal
         $('#myModal').modal('hide');
         // display: none for about_page
@@ -25,6 +30,7 @@ $(document).ready(function () {
 
         game_container.show();
 
+        load_questions();
 
       });
     };

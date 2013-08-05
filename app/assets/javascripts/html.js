@@ -64,6 +64,45 @@ function updateTimer() {
 	}
 }
 
+function showNotBad() {
+	showMessage($('#not_bad'), 2000, function () {
+		getNextQuestion();
+	});
+}
+
+function showNotImpressed() {
+	showMessage($('#not_impressed'), 2000, function () {
+		playerReset();
+	});
+}
+
+function showNotYou() {
+	showMessage($('#not_you'), 1500, function () {
+	});
+}
+
+function showYouWon() {
+	showMessage($('#you_won'), 5000, function () {
+		$('#won-player').html(playerWithHighestScore().name);
+		playVideo();
+	});
+}
+
+function showMessage($el, delay, fn) {
+	$('#mask').show();
+
+	centerElement($el);
+	$el.show();
+
+	setTimeout(function() {
+		$('#mask').hide();
+		$el.hide();
+		fn();
+	}, delay);
+}
+
+
+
 function centerElement($el) {
 	$el.css("position","absolute");
 	$el.css("top", Math.max(0, (($(window).height() - $($el).outerHeight()) / 2) + $(window).scrollTop()) + "px");

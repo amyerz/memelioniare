@@ -27,8 +27,7 @@ function getNextQuestion() {
 	if (game.questions.length == 0) {
     stopTheme();
     game.round.startTime = null;
-		alert('Game over! Winner of this game:' + playerWithHighestScore().name);
-		playVideo();
+		showYouWon();
 
 	} else {
 		var current_question = game.questions.shift();
@@ -44,10 +43,6 @@ function getNextQuestion() {
     playTheme();
 
 		fillInQuestion(current_question);
-
-		$('.choice').click(function() {
-			playerChoiceClicked(this);
-		});
 	}
 }
 
@@ -84,7 +79,7 @@ function playerButtonClicked(key) {
   playBuzzer();
 
   if (game.round.alreadyPlayed.indexOf(currentPlayer) != -1) {
-  	alert('Hey! Not you!');
+  	showNotYou();
   	return ;
   }
 
@@ -99,11 +94,9 @@ function playerChoiceClicked(choice) {
 
 	if (game.current_question.correct_choice == index) {
 		game.round.current_player.score += 1;
-		alert('Right');
-		getNextQuestion();
+		showNotBad();
 	} else {
-		alert('Meeep');
-		playerReset();
+		showNotImpressed();
 	}
 }
 
