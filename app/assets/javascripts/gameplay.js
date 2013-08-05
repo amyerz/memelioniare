@@ -29,7 +29,6 @@ function getNextQuestion() {
     game.round.startTime = null;
 		alert('Game over! Winner of this game:' + playerWithHighestScore().name);
 		playVideo();
-    load_questions();
 
 	} else {
 		var current_question = game.questions.shift();
