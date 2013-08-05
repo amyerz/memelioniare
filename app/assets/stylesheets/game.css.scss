@@ -130,5 +130,36 @@ body {
 }
 
 
+#not_impressed {
+  display: none;
+  width: 445px;
+  height: 413px;
+  position: absolute;
 
+}
 
+#text {
+  color: white;
+  font-size: 45px;
+}
+
+#not_bad {
+  display: none;
+  width: 288px;
+  height: 288px;
+  position: absolute;
+}
+
+#not_you {
+  display: none;
+  width: 400px;
+  height: 300px;
+  position: absolute;
+}
+
+#you_won {
+  display: none;
+  width: 339px;
+  height: 300px;
+  position: absolute;
+}
