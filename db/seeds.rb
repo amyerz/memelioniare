@@ -18,28 +18,6 @@
 #all correct answer is the first choice!
 questions = [
 
-	# {
-	# 	content: "In a restaurant, she asks to switch chairs with you(her boyfriend) bacuse:",
-	# 	question_type:"Match this Meme",
-	# 	choices:[
-	# 		"Your overly attached gf is upset that you can see way too many other girls from where you're sitting, and wants to create a human shield between you and them,",
-	# 		"It's a little bit drafty where she's sitting, and she forgot her sweater.",
-	# 		"She knows you prefer not sitting with your back facing the door and is trying to be considerate",
-	# 		"She would prefer to be closer to the restroom so she doesn't have to ask you move if she needs to run to the ladies room. "
-	# 	]
-	# },
-
-	# {
-	# 	content: "This kid is super excited because:",
-	# 	question_type: "Match this Meme",
-	# 	choices:[
-	# 		"He was the 1,000,000 visitor to this site and won a free iPad for the 2nd time that day.",
-	# 		"He finished his term paper on the effects of whaling in Antartica a whole day early",
-	# 		"He leveled up in World of Warcraft",
-	# 		"He successefully wrote a complex algorithm for the Entscheidungsproblem "
-	# 	]
-	# },
-
 	  {
 	    content: "overlyattachedgirlfriend.jpg",
 	    question_type:"Name this Meme",
@@ -129,6 +107,323 @@ questions = [
 	    ]
 	  },
 
+  #business cat
+    {
+      content: "businesscat.jpg",
+      question_type: "Name this Meme",
+      choices:[
+        "Business Cat",
+        "Overdressed Feline",
+        "Busy Bee Bob",
+        "Marketing Kitty"
+
+      ]
+    },
+
+  #bad joke eel
+    {
+      content: "badjokeeel.jpg",
+      question_type: "Name this Meme",
+      choices:[
+        "Bad Joke Eel",
+        "Excited Eel",
+        "Bad Pun Eel",
+        "Condescending Eel"
+
+      ]
+    },
+
+
+  #not sure fry
+    {
+      content: "notsurefry.jpg",
+      question_type: "Name this Meme",
+      choices:[
+        "Not Sure Fry",
+        "Undecided Guy",
+        "Squint Eye Fry",
+        "Always Unsure Guy"
+
+      ]
+    },
+
+  #success kid
+    {
+      content: "sucesskid.jpg",
+      question_type: "Name this Meme",
+      choices:[
+        "Success Kid",
+        "Thug Kid",
+        "Sucess Sammy",
+        "Baby Boom"
+
+      ]
+    },
+
+
+  #picard
+    {
+      content: "whythefuckpicard.jpg",
+      question_type: "Name this Meme",
+      choices:[
+        "Why The Fuck Picard",
+        "Disappointed Picard",
+        "Angry Bald Guy",
+        "Disappointed White Guy"
+
+      ]
+    },
+	    
+	    
+  #cocaine bear
+    {
+      content: "cocaine-bear.jpg",
+      question_type: "Name this Meme",
+      choices:[
+        "I Fucking Love Cocaine Bear",
+        "Bernstein Bear",
+        "Snowy Bear",
+        "Mr. Grizzly Bear"
+
+      ]
+    },
+  	    
+   #good guy greg
+    {
+      content: "good_guy_greg.jpg",
+      question_type: "Name this Meme",
+      choices:[
+        "Good Guy Greg",
+        "Stoner Dude",
+        "Happy Steve",
+        "Chronic Chris"
+
+      ]
+    },
+    
+    	    
+  #leave brtiney alone
+    {
+      content: "Leave_Britney_Alone.jpg",
+      question_type: "Name this Meme",
+      choices:[
+        "Leave Britney Alone",
+        "Leave Me Alone",
+        "Leave Shania Alone",
+        "Leave Amanda Bynes Alone"
+        
+      ]
+    },
+    
+      	    
+  #arrow in the knee
+    {
+      content: "arrow-in-the-knee.jpg",
+      question_type: "Name this Meme",
+      choices:[
+        "I took an arrow in the knee",
+        "Elder Scrolls Warrior",
+        "Town Guard",
+        "I'm a warrior man!"
+
+      ]
+    },
+    
+  	    
+  #duck face
+    {
+      content: "duck_face.jpg",
+      question_type: "Name this Meme",
+      choices:[
+        "Duck Face",
+        "Jersey Shorelicious",
+        "Fake Tan Tina",
+        "DTF"
+
+      ]
+    },
+    
+  #bed intruder
+    {
+      content: "bed_intruder.jpg",
+      question_type: "Name this Meme",
+      choices:[
+        "Bed Intruder Song",
+        "Hide Your Kids, Hide Your Wife",
+        "Snatching All Your People Up.",
+        "Antoine"
+
+      ]
+    },
+    
+  #sheltering suburban mom
+    {
+      content: "sheltering-suburban-mom.jpg",
+      question_type: "Name this Meme",
+      choices:[
+        "Sheltering Suburban Mom",
+        "Minivan Mom",
+        "Toddler Pagaent Mom",
+        "Middle-Aged Haircut Mom"
+
+      ]
+    },
+    
+  #activated my trap card
+    {
+      content: "trap-card.jpg",
+      question_type: "Name this Meme",
+      choices:[
+        "You Just Activated My Trap Card",
+        "Magic The Gathering Kid",
+        "Yu-Gi-Oh Card Kid",
+        "You Just Got PWNED"
+
+      ]
+    },
+      
+  #bad pun raccoon
+    {
+      content: "bad_pun_raccoon.jpg",
+      question_type: "Name this Meme",
+      choices:[
+        "Bad Pun Raccoon",
+        "Silly Raccoon",
+        "Rabid Raccoon",
+        "Fail Raccoon"
+
+      ]
+    },
+    
+  #ermahgerd gersberms
+    {
+      content: "Ermahgerd_Gersberms.jpg",
+      question_type: "Name this Meme",
+      choices:[
+        "Ermahgerd Gersberms!",
+        "OMG I Love Books!",
+        "Pigtail Meg",
+        "OMG Goosebumps!"
+
+      ]
+    },
+    
+  #ridiculously photogenic guy
+    {
+      content: "ridiculously_photogenic_guy.jpg",
+      question_type: "Name this Meme",
+      choices:[
+        "Ridiculously Photogenic Guy",
+        "Handsome Marathon Man",
+        "Ruggedly Good Lokking Race Running Guy",
+        "I Won Because I Didn't Give Up"
+
+      ]
+    },
+    
+  #do you even lift
+    {
+      content: "do-you-even-lift.jpg",
+      question_type: "Name this Meme",
+      choices:[
+        "Do You Even Lift?",
+        "Muscle Man",
+        "Roid Rage Guy",
+        "Weight Room Master"
+
+      ]
+    },
+    
+  #like a boss
+    {
+      content: "like-a-boss.jpg",
+      question_type: "Name this Meme",
+      choices:[
+        "Like A Boss",
+        "In Charge Guy",
+        "Like Mid-Level Management",
+        "Yuppie Man"
+
+      ]
+    },
+    
+  #grumpy cat
+    {
+      content: "Grumpy-Cat.jpg",
+      question_type: "Name this Meme",
+      choices:[
+        "Grumpy Cat",
+        "Sad Cat",
+        "Mad Cat",
+        "Angry Kitty"
+
+      ]
+    },
+    
+  #disaster girl
+    {
+      content: "disaster-girl.jpg",
+      question_type: "Name this Meme",
+      choices:[
+        "Disaster Girl",
+        "Arsonist Girl",
+        "Firestarter Girl",
+        "Destruction Girl"
+
+      ]
+    },
+    
+  #hipster kitty
+    {
+      content: "hipster-kitty.jpg",
+      question_type: "Name this Meme",
+      choices:[
+        "Hipster Kitty",
+        "Too Cool For School Cat",
+        "You've Never Heard of Them Kitty",
+        "Ironic Kitty"
+
+      ]
+    },
+    
+  #i like turtles
+    {
+      content: "iliketurtles.jpg",
+      question_type: "Name this Meme",
+      choices:[
+        "I Like Turtles",
+        "I Like Zombies",
+        "I Like Halloween",
+        "I Like Frogs"
+
+      ]
+    },
+    
+  #baby godfather
+    {
+      content: "baby-godfather.jpg",
+      question_type: "Name this Meme",
+      choices:[
+        "Baby Godfather",
+        "Mafia Baby",
+        "I Want My Nose Baby",
+        "Angry Baby"
+
+      ]
+    },
+    
+  #confession bear
+     {
+       content: "confession-bear.jpg",
+       question_type: "Name this Meme",
+       choices:[
+         "Confession Bear",
+         "TMI Bear",
+         "Nasty Bear",
+         "Smelly Balls Bear"
+
+       ]
+     },
 
 	  #business cat
 	    {
@@ -197,9 +492,6 @@ questions = [
 
 	      ]
 	    }
-
-
-
 ]
 
 questions.each do |question|
