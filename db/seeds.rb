@@ -107,7 +107,6 @@ questions = [
 	    ]
 	  },
 
-
   #business cat
     {
       content: "businesscat.jpg",
@@ -426,6 +425,73 @@ questions = [
        ]
      },
 
+	  #business cat
+	    {
+	      content: "businesscat.jpg",
+	      question_type: "Name this Meme",
+	      choices:[
+	        "Business Cat",
+	        "Overdressed Feline",
+	        "Busy Bee Bob",
+	        "Marketing Kitty"
+
+	      ]
+	    },
+
+	  #bad joke eel
+	    {
+	      content: "badjokeeel.jpg",
+	      question_type: "Name this Meme",
+	      choices:[
+	        "Bad Joke Eel",
+	        "Excited Eel",
+	        "Bad Pun Eel",
+	        "Condescending Eel"
+
+	      ]
+	    },
+
+
+	  #not sure fry
+	    {
+	      content: "notsurefry.jpg",
+	      question_type: "Name this Meme",
+	      choices:[
+	        "Not Sure Fry",
+	        "Undecided Guy",
+	        "Squint Eye Fry",
+	        "Always Unsure Guy"
+
+	      ]
+	    },
+
+	  #success kid
+	    {
+
+	      content: "successkid.jpg",
+				question_type: "Name this Meme",
+	      choices:[
+	        "Success Kid",
+	        "Thug Kid",
+	        "Sucess Sammy",
+	        "Baby Boom"
+
+	      ]
+	    },
+
+
+	  #picard
+	    {
+	      content: "whythefuckpicard.jpg",
+	      question_type: "Name this Meme",
+	      choices:[
+	        "Why The Fuck Picard",
+	        "Disappointed Picard",
+	        "Angry Bald Guy",
+	        "Disappointed White Guy"
+
+	      ]
+	    }
 ]
 
 questions.each do |question|

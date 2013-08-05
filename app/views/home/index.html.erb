@@ -1,54 +1,59 @@
-<html>
- <head>
-  <title>Game</title>
-  
-  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
-  <script id="welcome" type="text/template">
-    Welcome to the game
-  </script>
- 
-  <script id="question_template" type="text/template">
-    <img id="question_img" />
-    <table>
-      <tr>
-        <td><div class="choice" id="choice1" data-id="0">Text1</div></td>
-        <td><div class="choice" id="choice2" data-id="1">Text2</div></td>
-      </tr>
-      <tr>
-        <td><div class="choice" id="choice3" data-id="2">Text3</div></td>
-        <td><div class="choice" id="choice4" data-id="3">Text4</div></td>
-      </tr>
-    </table>
-  </script>
+<div id="total_container">
+  <div id="about_page_container">
+    <h1>Who Wants to be a Memelionaire?</h1>
+      <p>Have you ever wanted to test your memeability against other memesters? Enter, Memelionare!!!!!</p>
+      <p>Test your meme-fluency against two others.  A short round of ten questions will be presented to all three meme-estants.  Each player will have a key that will act as their buzzer.  The first player that buzzes in has an opportunity to answer the question. The player who answers the most correct questions is the meme-tastic winner!!!!  </p>
+      <p>Player One's key buzzer is the letter "a."</p>
+      <p>Player Two's key buzzer is the letter "b."</p>
+      <p>Player Three's key buzzers it the letter "l."</p>
+    <!-- Button trigger modal -->
+      <a id="signin_button" data-toggle="modal" href="#myModal" class="btn btn-primary btn-large">Sign In to Start Game</a>
+      <%= render 'game/signinmodal' %>
+  </div>
+  <div id="game">
+      <div id="users_nav">
+        <div class="users_name">
+          <h3 id="player1_name_show">
 
-  <script src="html.js"></script>
-  <script src="communication.js"></script>
-  <script src="configuration.js"></script>
-  <script src="gameplay.js"></script>
-  <script src="start.js"></script>
+          </h3>
+          <p id="press_a">
+            Press "A" to Buzz-In.
+          </p>
+        </div>
+        <div class="users_name ">
+          <h3 id="player2_name_show">
 
-  <link rel="stylesheet" type="text/css" href="style.css">
+          </h3>
+          <p id="press_b">
+            Press "G" to Buzz-In.
+          </p>
+        </div>
+        <div class="users_name">
+          <h3 id="player3_name_show">
 
- </head>
- 
-  <body>
-    <div id="gametitle"></div>
-    <div id="mode"></div>
-    <div id="timer"></div>
+          </h3>
+          <p id="press_l">
+            Press "L" to Buzz-In.
+          </p>
+        </div>
+      </div>
+      <div id="timer"></div>
 
 
-    <div id="container"></div>
-    <button id="startGameButton">Start Game</button>
+      <div id="gameplay">
+        <!-- <div id="gametitle"></div> -->
+        <div class="container"><img id ="question_img"></div>
 
-    <table>
-      <tr>
-        <td>Player 1: <span id="player1_score"></span></td>
-        <td>Player 2: <span id="player2_score"></span></td>
-        <td>Player 3: <span id="player3_score"></span></td>
-      </tr>
-    </table>
-  </body>
+        <div id="choice1" class="choice" data-id="0"></div>
+        <div id="choice2" class="choice" data-id="1"></div>
+        <div id="choice3" class="choice" data-id="2"></div>
+        <div id="choice4" class="choice" data-id="3"></div>
+      </div>
+      <div id="mode"></div>
+  </div>
+</div>
 
- </html>
+
+
 
 

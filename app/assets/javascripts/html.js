@@ -5,7 +5,7 @@ function update_container(html) {
 function fillInQuestion(question) {
 	var content = $('#question_template').html();
 	update_container(content);
- 
+
 	$('#question_img').attr('src', 'assets/memes/' + question.content);
 
 	$('#choice1').html(question.choices[0]);
@@ -26,8 +26,12 @@ function updateTitle() {
 }
 
 function updateMode() {
+	var player1_name = $('#player1name').val().toUpperCase();
+	var player2_name = $('#player2name').val().toUpperCase();
+	var player3_name = $('#player3name').val().toUpperCase();
+
 	if (game.round.state == 'wait') {
-		$('#mode').html('Please press one of these buttons: Player 1 (A), Player 2 (G), Player 3 (L)');
+		$('#mode').html('Please press one of these buttons to buzz-in: ' +  player1_name + ' ("A"), ' + player2_name + ' ("G"), ' + player3_name + ' ("L")');
 	} else {
 		$('#mode').html('Player "' + game.round.current_player.name + '", please select an answer!');
 	}
@@ -51,7 +55,7 @@ function updateTimer() {
 		var timeElapsedMs = now.getTime() - startTime;
 		var timeLeft = Math.floor(maxTime - (timeElapsedMs / 1000));
 
-		$('#timer').html(timeLeft + ' seconds left');	
+		$('#timer').html(timeLeft + ' seconds left');
 
 		if (timeLeft <= 0) timeOut();
 
