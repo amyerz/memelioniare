@@ -25,8 +25,11 @@ function timeOut() {
 function getNextQuestion() {
 
 	if (game.questions.length == 0) {
+    stopTheme();
+    game.round.startTime = null;
 		alert('Game over! Winner of this game:' + playerWithHighestScore().name);
-		load_questions();
+		playVideo();
+    load_questions();
 
 	} else {
 		var current_question = game.questions.shift();
@@ -39,6 +42,7 @@ function getNextQuestion() {
 		updateScores();
 		updateTitle();
 		updateMode();
+    playTheme();
 
 		fillInQuestion(current_question);
 
@@ -63,7 +67,7 @@ function playerReset() {
 }
 
 function playerButtonClicked(key) {
-  
+
 	if ((game.round.state != 'wait') || (!isGameRunning())) return;
 
   var currentPlayer = null;
@@ -76,6 +80,10 @@ function playerButtonClicked(key) {
   	currentPlayer = game.player[2];
   }
 
+  if (!currentPlayer) return;
+
+  playBuzzer();
+
   if (game.round.alreadyPlayed.indexOf(currentPlayer) != -1) {
   	alert('Hey! Not you!');
   	return ;
@@ -84,7 +92,7 @@ function playerButtonClicked(key) {
   selectPlayer(currentPlayer);
 }
 function playerChoiceClicked(choice) {
-  
+
 	if ((game.round.state != 'select') || (!isGameRunning())) return;
 
 	var $el = $(choice);

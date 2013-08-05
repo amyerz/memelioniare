@@ -3,9 +3,9 @@
     <h1>Who Wants to be a Memelionaire?</h1>
       <p>Have you ever wanted to test your memeability against other memesters? Enter, Memelionare!!!!!</p>
       <p>Test your meme-fluency against two others.  A short round of ten questions will be presented to all three meme-estants.  Each player will have a key that will act as their buzzer.  The first player that buzzes in has an opportunity to answer the question. The player who answers the most correct questions is the meme-tastic winner!!!!  </p>
-      <p>Player One's key buzzer is the letter "a."</p>
-      <p>Player Two's key buzzer is the letter "b."</p>
-      <p>Player Three's key buzzers it the letter "l."</p>
+      <p>Player One's key buzzer is the letter "A."</p>
+      <p>Player Two's key buzzer is the letter "G."</p>
+      <p>Player Three's key buzzers it the letter "L."</p>
     <!-- Button trigger modal -->
       <a id="signin_button" data-toggle="modal" href="#myModal" class="btn btn-primary btn-large">Sign In to Start Game</a>
       <%= render 'game/signinmodal' %>
@@ -54,6 +54,14 @@
 </div>
 
 
+<audio id="audio-theme">
+      <source src="/audios/theme.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="audio-buzzer">
+      <source src="/audios/buzzer.mp3" type="audio/mpeg">
+    </audio>
 
+    <div id="mask"></div>
+    <iframe id="ytplayer" type="text/html" width="640" height="360" src="" frameborder="0" allowfullscreen></iframe>
 
 
